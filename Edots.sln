@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edots.API", "Edots.API\Edots.API.csproj", "{9C5446F9-464F-4CFD-A05C-71E23E0D2817}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edots.Web", "Edots.Web\Edots.Web.csproj", "{BAA28767-944E-4443-9207-D946CBE27F3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edots.Domain", "Edots.Domain\Edots.Domain.csproj", "{60541FFE-38A2-4B7F-A050-704C5041B76F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edots.Infrastructure", "Edots.Infrastructure\Edots.Infrastructure.csproj", "{77A33BD3-E4D3-4097-B167-B65254EAF79A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9C5446F9-464F-4CFD-A05C-71E23E0D2817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C5446F9-464F-4CFD-A05C-71E23E0D2817}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C5446F9-464F-4CFD-A05C-71E23E0D2817}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C5446F9-464F-4CFD-A05C-71E23E0D2817}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BAA28767-944E-4443-9207-D946CBE27F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BAA28767-944E-4443-9207-D946CBE27F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAA28767-944E-4443-9207-D946CBE27F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAA28767-944E-4443-9207-D946CBE27F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60541FFE-38A2-4B7F-A050-704C5041B76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60541FFE-38A2-4B7F-A050-704C5041B76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60541FFE-38A2-4B7F-A050-704C5041B76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60541FFE-38A2-4B7F-A050-704C5041B76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A33BD3-E4D3-4097-B167-B65254EAF79A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A33BD3-E4D3-4097-B167-B65254EAF79A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A33BD3-E4D3-4097-B167-B65254EAF79A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A33BD3-E4D3-4097-B167-B65254EAF79A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

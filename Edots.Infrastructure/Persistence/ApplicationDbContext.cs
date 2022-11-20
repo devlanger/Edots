@@ -10,6 +10,6 @@ namespace Edots.Web.Data
             : base(options)
         {
         }
-        public DbSet<Edots.Web.Models.Note> Note { get; set; }
+        public DbSet<Note> Note { get; set; }
     }
 }
