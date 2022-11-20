@@ -10,33 +10,38 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row d-flex justify-content-center">
+            <div class="">
+                <!-- Draggable Without Images card start -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-header-text">Draggable Grid with cards</h5>
+                    </div>
+                    <div class="card-block">
+                        <div class="row" id="sortable">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-4">
+                                    <div class="card-sub m-b-20">
+                                        <!--<img class="card-img-top img-fluid" src="http://frontendfreecode.com/codes/files/card2.jpg" alt="Card image cap">-->
+                                        <div class="card-block">
+                                            <h4 class="card-title">
+                                                @Html.DisplayFor(modelItem => item.Name)
+                                            </h4>
+                                            <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
+                                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                        <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                        <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            
+                        </div>
+                    </div>
+                </div> <!-- Draggable Without Images card end -->
+            </div>
+        </div>
+    </div>
